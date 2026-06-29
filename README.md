@@ -1,21 +1,20 @@
-# Task-Tracker
+# Task Tracker CLI
 
-INSTRUCTIONS
+A simple tool for managing your tasks directly from the terminal.
 
-1. Adding a new task
-   python3 task_cli.py add "Your task description"
+## Usage
 
-2. Updating and deleting tasks
-   python3 task_cli.py update 1 "New task description" 
-   python3 task_cli.py delete 1
+| Action | Command |
+| :--- | :--- |
+| **Add** | `python3 task_cli.py add "Description"` |
+| **Update** | `python3 task_cli.py update 1 "New description"` |
+| **Delete** | `python3 task_cli.py delete 1` |
+| **List all** | `python3 task_cli.py list` |
 
-3. Marking a task as in progress or done
-   python3 task_cli.py mark-in-progress 1
-   python3 task_cli.py mark-done 1
+### Changing Status
+* `python3 task_cli.py mark-in-progress 1`
+* `python3 task_cli.py mark-done 1`
 
-4. Listing all tasks
-   python3 task_cli.py list
-
-5. Listing tasks by status
-   python3 task_cli.py list done
-   python3 task_cli.py list in-progress
+### Filtering
+* `python3 task_cli.py list done`
+* `python3 task_cli.py list in-progress`
